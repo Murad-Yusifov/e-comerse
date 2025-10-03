@@ -1,0 +1,1 @@
+export const newProducts = ["New Products", "Laptops", "Smartphones", "Cameras", "Accessories"]
