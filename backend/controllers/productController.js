@@ -1,4 +1,4 @@
-import ProductModel from "../models/product.ja"
+import ProductModel from "../models/product.js"
 
 // Get all products
 export const getProducts = async (req, res) => {
