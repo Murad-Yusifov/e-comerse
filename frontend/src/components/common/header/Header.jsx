@@ -2,7 +2,7 @@ import { useState, useContext, useEffect, useRef } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import Top from "./Top";
 import logo from "../../../assets/images/logo.png"; 
-import NavBar from "../NavBAr";
+import NavBar from "../NavBar";
 import { AuthContext } from "../../../context/authContext";
 
 const Header = () => {
