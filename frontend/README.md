@@ -1,64 +1,100 @@
-ecommerce-app/
-│── public/                 # Static assets
+frontend/
+│── public/
 │   ├── favicon.ico
 │   ├── logo.png
-│   └── index.html
+│   └── vite.svg
 │
 │── src/
-│   ├── assets/             # Images, fonts, icons, styles
-│   │   ├── images/
+│   ├── assets/
 │   │   ├── icons/
-│   │   └── styles/         # Global SCSS/Tailwind config, variables, mixins
+│   │   ├── images/
+│   │   └── styles/
+│   │       ├── App.css
+│   │       └── index.css
+│   │   └── react.svg
 │   │
-│   ├── components/         # Reusable UI components
-│   │   ├── common/         # Buttons, Inputs, Modals, Loader, etc.
-│   │   ├── layout/         # Header, Footer, Sidebar, Navbar
-│   │   └── product/        # ProductCard, ProductList, ProductDetails
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── footer/
+│   │   │   │   └── Footer.jsx
+│   │   │   ├── header/
+│   │   │   │   ├── Filters.jsx
+│   │   │   │   ├── Header.jsx
+│   │   │   │   └── Top.jsx
+│   │   │   └── NavBar.jsx
+│   │   ├── layout/
+│   │   │   └── Layout.jsx
+│   │   └── product/
 │   │
-│   ├── features/           # Feature-based structure
-│   │   ├── auth/           # Login, Register, ForgotPassword
-│   │   ├── cart/           # CartPage, CartSlice, CartUtils
-│   │   ├── checkout/       # Checkout flow, Payment
-│   │   ├── orders/         # Orders page, OrderDetails
-│   │   └── wishlist/       # Wishlist functionality
+│   ├── features/
+│   │   ├── auth/
+│   │   ├── cart/
+│   │   ├── checkout/
+│   │   ├── orders/
+│   │   └── wishlist/
 │   │
-│   ├── hooks/              # Custom hooks (useAuth, useCart, useFetch, etc.)
+│   ├── hooks/
+│   │   └── useProducts.jsx
 │   │
-│   ├── pages/              # Page-level components
-│   │   ├── Home/
-│   │   ├── Shop/
-│   │   ├── Product/
+│   ├── pages/
 │   │   ├── Cart/
 │   │   ├── Checkout/
+│   │   ├── Home/
+│   │   │   ├── Home.jsx
+│   │   │   └── components/
+│   │   │       ├── collections/
+│   │   │       │   ├── Camera.jsx
+│   │   │       │   ├── Collections.jsx
+│   │   │       │   ├── EarPhone.jsx
+│   │   │       │   └── LaptobCol.jsx
+│   │   │       ├── common/
+│   │   │       │   └── SendMail.jsx
+│   │   │       └── footer/
 │   │   ├── Orders/
-│   │   └── Profile/
+│   │   │   └── Orders.jsx
+│   │   ├── Product/
+│   │   │   ├── Products.jsx
+│   │   │   └── components/
+│   │   │       ├── common/
+│   │   │       │   ├── NewProducts.jsx
+│   │   │       │   └── ProductCart.jsx
+│   │   │       └── footer/
+│   │   ├── Profile/
+│   │   │   └── Profile.jsx
+│   │   └── Shop/
+│   │       └── Shop.jsx
 │   │
-│   ├── redux/              # Redux Toolkit slices & store
+│   ├── redux/
 │   │   ├── store.js
 │   │   └── slices/
 │   │       ├── authSlice.js
 │   │       ├── cartSlice.js
-│   │       ├── productSlice.js
-│   │       └── orderSlice.js
+│   │       ├── orderSlice.js
+│   │       └── productSlice.js
 │   │
-│   ├── services/           # API calls (Axios/Fetch wrappers)
+│   ├── routes/
+│   │   └── AppRouter.js
+│   │
+│   ├── services/
 │   │   ├── api.js
-│   │   ├── productService.js
 │   │   ├── authService.js
-│   │   └── orderService.js
+│   │   ├── orderService.js
+│   │   └── productService.js
 │   │
-│   ├── utils/              # Helpers (formatPrice, validators, constants)
+│   ├── utils/
+│   │   ├── data.js
+│   │   └── formaatName.js
 │   │
-│   ├── App.js              # Root component
-│   ├── main.js             # Entry point (ReactDOM.render / createRoot)
-│   └── routes/             # Centralized routes config
-│       └── AppRoutes.jsx
+│   ├── App.jsx
+│   └── main.jsx
 │
-│── .env                    # Environment variables (API keys, base URL)
+│── .env
+│── .gitignore
+│── eslint.config.js
+│── index.html
 │── package.json
-│── tailwind.config.js      # If using Tailwind
-│── vite.config.js / webpack.config.js
-└── README.md
+│── package-lock.json
+│── vite.config.js
 
 
 
@@ -69,3 +105,10 @@ Backend Codes.
 
 ----| Backend new Products Collections.
 ----| BAckend Top sellings products
+
+
+Data page that I use for AI help
+
+AI1:https://chatgpt.com/c/68e435aa-36d8-832d-ba33-acb88a366340
+AI2:https://chatgpt.com/c/68e1359f-be10-8325-93d6-66e92e1dbd49
+AI3:https://chatgpt.com/c/68e44875-dcf8-8330-be21-9f58d5c72c55
