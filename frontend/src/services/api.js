@@ -1,7 +1,11 @@
 import axios from "axios";
 
+const LOCAL_API = "http://localhost:5000/api";
+const REMOTE_API = "https://e-comerse-ki0s.onrender.com/api";
+
+// Dynamic baseURL using ternary operator
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: window.location.hostname === "localhost" ? LOCAL_API : REMOTE_API,
 });
 
 api.interceptors.request.use(
