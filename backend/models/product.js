@@ -25,7 +25,7 @@ productScheme.pre("save", function(next){
 
 const ProductModel = mongoose.model("Product", productScheme)
 
-export default ProductModel
+export default ProductModeL
 
 
 
